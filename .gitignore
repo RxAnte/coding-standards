@@ -1,0 +1,6 @@
+.DS_Store
+*-debug.log
+*-error.log
+/.idea/git_toolbox_blame.xml
+/.idea/vcs.xml
+/vendor
