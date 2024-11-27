@@ -4,3 +4,4 @@
 /.idea/git_toolbox_blame.xml
 /.idea/vcs.xml
 /vendor
+/node_modules
