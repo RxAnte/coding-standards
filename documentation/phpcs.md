@@ -5,7 +5,7 @@ The RxAnte [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) coding standard
 To use in your project:
 
 - `composer require --dev rxante/coding-standards`
-- Reference `vendor/rxante/coding-standards/phpcs.xml` in your project's `phpcs.xml` file
+- Reference `RxAnteCodingStandards` in your project's `phpcs.xml` file
 - From the commandline you can run `php -d memory_limit=4G ./vendor/bin/phpcs` to show any PHPCS errors, or `php -d memory_limit=4G ./vendor/bin/phpcbf` to automatically fix any errors that are fixable.
 
 Example configuration file:
@@ -21,6 +21,6 @@ Example configuration file:
     <file>cli</file>
 
     <!-- Include the RxAnte ruleset -->
-    <rule ref="vendor/rxante/coding-standards/phpcs.xml" />
+    <rule ref="RxAnteCodingStandards" />
 </ruleset>
 ```
