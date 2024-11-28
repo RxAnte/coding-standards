@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-rxante-coding-standards",
-    "description": "RxAnte's PHP App Boostrap",
+    "description": "RxAnte Coding Standards",
     "version": "0.0.1",
     "author": "RxAnte Web Services",
     "license": "Apache-2.0",
