@@ -1,6 +1,7 @@
 parameters:
     level: max
     treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
     ignoreErrors:
         - "#^Access to an undefined property Pest\\\\Mixins\\\\Expectation\\<string\\|null\\>\\:\\:\\$not\\.$#"
 
