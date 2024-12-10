@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "bnf/phpstan-psr-container": "^1.1",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
         "doctrine/coding-standard": "^12.0",
         "jetbrains/phpstorm-attributes": "^1.2",
