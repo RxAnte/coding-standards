@@ -58,7 +58,7 @@ module.exports = {
         ],
         'import/no-named-default': 'off',
         'import/prefer-default-export': 'off',
-        'indent': ['error', 4],
+        'indent': ['error', 4, { 'SwitchCase': 1 }],
         'jsx-a11y/anchor-is-valid': ['error', {
             'components': ['Link'],
             'specialLink': ['hrefLeft', 'hrefRight'],
@@ -84,11 +84,13 @@ module.exports = {
         'react/jsx-no-useless-fragment': 'off',
         'react/jsx-props-no-spreading': 0,
         'react/require-default-props': 0,
-        "space-before-function-paren": ['error', {
+        'space-before-function-paren': ['error', {
             'anonymous': 'always',
             'named': 'always',
             'asyncArrow': 'always'
-        }]
+        }],
+        'no-underscore-dangle': 'off',
+        'react/prop-types': 'off',
     },
     'overrides': [
         {
