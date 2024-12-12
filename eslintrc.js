@@ -129,7 +129,7 @@ module.exports = {
                 'react/jsx-props-no-spreading': 0,
                 'react/function-component-definition': 0,
                 'no-param-reassign': 0,
-                'indent': ['error', 4],
+                'indent': ['error', 4, { 'SwitchCase': 1 }],
                 'react/jsx-indent': ['error', 4],
                 'react/jsx-indent-props': ['error', 4],
                 '@typescript-eslint/indent': ['error', 4, {
@@ -186,7 +186,9 @@ module.exports = {
                 'newline-before-return': 1,
                 'import/no-named-default': 'off',
                 'react/jsx-no-useless-fragment': 'off',
-                'import/prefer-default-export': 'off'
+                'import/prefer-default-export': 'off',
+                'no-underscore-dangle': 'off',
+                'react/prop-types': 'off',
             }
         },
         {
