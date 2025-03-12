@@ -202,6 +202,25 @@ Object.assign(typescriptRules, overrideRules, {
      * @see https://typescript-eslint.io/rules/no-inferrable-types
      */
     '@typescript-eslint/no-inferrable-types': 0,
+
+    /**
+     * It's silly to warn about the variable in caught errors because if you
+     * want to catch the error, but don't want to use the var, you'll get an
+     * ESLint error. And the `error` has to be there or the try/catch block
+     * won't work.
+     *
+     * Before setting caughtErrors to 'none' this would be an ESLint error
+     * because `error` was unused. There are many cases where you would
+     * want to do this.
+     * ```
+     * try {
+     *     throw new Error('Foo');
+     * } catch (error) {
+     *     return { hasError: true };
+     * }
+     * ```
+     */
+    '@typescript-eslint/no-unused-vars': ['error', { caughtErrors: 'none' }],
 });
 
 module.exports = {

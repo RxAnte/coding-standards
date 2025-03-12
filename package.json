@@ -1,7 +1,7 @@
 {
     "name": "eslint-config-rxante-coding-standards",
     "description": "RxAnte Coding Standards",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "author": "RxAnte Web Services",
     "license": "Apache-2.0",
     "main": "index.js",
