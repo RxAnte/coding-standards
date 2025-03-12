@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 2.0.0 - 2025-03-12
+### Added
+- PHP: Updated [PHPStan](https://github.com/phpstan/phpstan) to 2.x
+- ESLint: Switched to [@kesills/eslint-config-airbnb-typescript](https://github.com/Kenneth-Sills/eslint-config-airbnb-typescript) (from [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript), which is no longer being maintained)
+- ESLint: Disabled the rule requiring 1 expression per line in JSX/TSX
+- ESLint: Updated rules to cover as many cases as possible of trying to use things as strings that aren't strings
+### Changed
+- Added copious notes and code comments about rules, why they're there, and what they do
+
 ## 1.1.2 - 2024-12-12
 ### Fixed
 - Fixed bugs from previous release
