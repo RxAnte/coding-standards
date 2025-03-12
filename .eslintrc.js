@@ -176,14 +176,22 @@ Object.assign(typescriptRules, overrideRules, {
      * Forbid shorthand method signature on interfaces
      * allowed: `interface Foo { func: (arg: string) => number }`
      * not allowed: `interface Example1 { func(arg: string): number }`
+     * @see https://typescript-eslint.io/rules/method-signature-style
      */
     '@typescript-eslint/method-signature-style': 'error',
 
     /**
      * Prevent calling `toString()` on objects that do not provide a meaningful
-     * string representation (prevents `[object Object]`)
+     * string representation (prevents `[object Object]`). Also prevent any
+     * concatenation of things that are not strings into strings and therefore
+     * probably can't be meaningfully concatenated.
+     * @see https://typescript-eslint.io/rules/no-base-to-string
+     * @see https://typescript-eslint.io/rules/restrict-template-expressions
+     * @see https://typescript-eslint.io/rules/restrict-plus-operands
      */
     '@typescript-eslint/no-base-to-string': 'error',
+    '@typescript-eslint/restrict-template-expressions': 'error',
+    '@typescript-eslint/restrict-plus-operands': 'error',
 
     /**
      * Allow explicitly setting types on variables and the like
@@ -191,6 +199,7 @@ Object.assign(typescriptRules, overrideRules, {
      * If rule was enabled, above would not be allowed, instead you'd be
      * required to let typescript infer the type: `const count = 5;`
      * It's fine to let typescript infer, but sometimes you want to be explicit
+     * @see https://typescript-eslint.io/rules/no-inferrable-types
      */
     '@typescript-eslint/no-inferrable-types': 0,
 });
