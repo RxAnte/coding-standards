@@ -152,6 +152,13 @@ const overrideRules = {
 
     /** We use typescript, we don't need this */
     'react/prop-types': 'off',
+
+    /**
+     * This should be up to the developer. When composing HTML, often requiring
+     * and enforcing one expression per line really makes things look odd and
+     * very difficult to scan and read.
+     */
+    'react/jsx-one-expression-per-line': 'off',
 };
 
 /**
