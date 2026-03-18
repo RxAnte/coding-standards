@@ -12,13 +12,13 @@
         "php": "^8.2",
         "bnf/phpstan-psr-container": "^1",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "doctrine/coding-standard": "^12",
+        "doctrine/coding-standard": "^14",
         "jetbrains/phpstorm-attributes": "^1",
         "phpstan/phpstan": "^2",
         "phpstan/phpstan-deprecation-rules": "^2",
         "phpstan/phpstan-mockery": "^2",
         "phpstan/phpstan-strict-rules": "^2",
-        "squizlabs/php_codesniffer": "^3"
+        "squizlabs/php_codesniffer": "^4"
     },
     "config": {
         "bin-compat": "full",
