@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.0.0 - 2026-03-23
+### Changed
+- **BREAKING CHANGES for 3.0.0**
+- ESLint: Updated to [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript)
+- ESLint: Now uses ESLint Flat Config. See [documentation](/documentation/eslint.md) on how to use it. `.eslintrc.json` will no longer work, you will need to update your project to use 3.0.0.
+- PHPStan: Paths to PHPStan configs are now more resilient.
+- PHPCS: Now uses [Doctrine Coding Standard v14](https://github.com/doctrine/coding-standard).
+
 ## 2.0.1 - 2025-03-12
 ### Fixed
 - Fixed an issue with @typescript-eslint/no-unused-vars flagging the `error` argument in try/catch blocks if the argument was unused. This is frustrating because the variable has to be there, but you may not always want to use the variable.

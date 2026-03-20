@@ -4,15 +4,14 @@ The RxAnte [ESLint](https://eslint.org) standards are based largely on the [AirB
 
 To use this ESLint configuration in your projects:
 
-- `pnpm add -D eslint-config-rxante-coding-standards`
-    - (or, if you prefer or are using the older, slower `npm` and can't or don't want to switch, run `npm install eslint-config-rxante-coding-standards --save-dev`)
-- Extend the RxAnte ESLint coding standards in your `.eslintrc` file.
-- From the command line, you can run: `NODE_OPTIONS="--trace-warnings" pnpm run lint --max-warnings=0`
+`pnpm add -D eslint-config-rxante-coding-standards` (or, if you prefer or are using the older, slower `npm` and can't or don't want to switch, run `npm install eslint-config-rxante-coding-standards --save-dev`)
 
-`.eslintrc` example:
+In your `eslint.config.mjs` file, use the rxante eslint config:
 
-```json
-{
-    "extends": ["rxante-coding-standards"]
-}
+```mjs
+import eslintrc from 'eslint-config-rxante-coding-standards';
+
+export default eslintrc;
 ```
+
+From the command line, you can run: `NODE_OPTIONS="--trace-warnings" npx eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0`
