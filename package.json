@@ -1,30 +1,20 @@
 {
     "name": "eslint-config-rxante-coding-standards",
     "description": "RxAnte Coding Standards",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "author": "RxAnte Web Services",
     "license": "Apache-2.0",
-    "main": "index.js",
+    "main": "index.mjs",
     "dependencies": {
-        "@kesills/eslint-config-airbnb-typescript": "^20.0.0",
-        "@typescript-eslint/eslint-plugin": "^8.57.1",
-        "@typescript-eslint/parser": "^8.57.1",
-        "eslint": "^8.57.1",
-        "eslint-config-airbnb": "^19.0.4",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-next": "^15.5.13",
-        "eslint-plugin-disable": "^2.0.3",
+        "@eslint/compat": "^2.0.3",
+        "@eslint/js": "^10.0.1",
+        "@types/react": "^19.2.14",
+        "eslint": "^9.39.4",
+        "eslint-config-airbnb-extended": "^3.0.1",
         "eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-import": "^2.32.0",
-        "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-no-jquery": "^3.1.1",
-        "eslint-plugin-promise": "^7.2.1",
-        "eslint-plugin-react": "^7.37.5",
-        "eslint-plugin-react-hooks": "^4.6.2",
+        "react": "^19.2.4",
         "typescript": "^5.9.3"
-    },
-    "devDependencies": {
-        "@types/react": "^19.2.14",
-        "react": "^19.2.4"
     }
 }
