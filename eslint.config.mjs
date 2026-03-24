@@ -202,6 +202,7 @@ export default defineConfig([
             '@typescript-eslint/consistent-indexed-object-style': 'off',
             '@typescript-eslint/consistent-type-definitions': 'off',
             '@typescript-eslint/no-duplicate-type-constituents': 'off',
+            '@typescript-eslint/no-unnecessary-type-arguments': 'off',
         },
     },
     {
