@@ -152,6 +152,7 @@ export default defineConfig([
             '@next/next/no-img-element': 'off',
 
             // React rules
+            'react-hooks/exhaustive-deps': 'error',
             'react/function-component-definition': 0,
             'react/jsx-no-useless-fragment': 'off',
             'react/jsx-props-no-spreading': 0,
