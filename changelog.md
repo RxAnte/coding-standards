@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.0.1 - 2025-03-24
+### Fixed
+- Make sure `react-hooks/exhaustive-deps` shows an error if a hook dependency is missing.
+- Allow defining types even if they can be well inferred. Defining types is a good and right thing to do because it makes intention explicit and makes it harder to accidentally change an inferred type.
+
 ## 3.0.0 - 2026-03-23
 ### Changed
 - **BREAKING CHANGES for 3.0.0**
