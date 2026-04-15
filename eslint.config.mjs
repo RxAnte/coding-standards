@@ -171,7 +171,13 @@ export default defineConfig([
         },
         rules: {
             // Import extensions configuration
-            'import/extensions': ['error', 'never'],
+            'import/extensions': [
+                'error',
+                'never',
+                {
+                    css: 'always',
+                },
+            ],
             'import-x/extensions': ['error', 'never'],
 
             // Import rules

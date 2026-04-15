@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.0.2 - 2025-04-15
+### Fixed
+- Allow `.css` file extensions in imports.
+
 ## 3.0.1 - 2025-03-24
 ### Fixed
 - Make sure `react-hooks/exhaustive-deps` shows an error if a hook dependency is missing.
